@@ -10,4 +10,4 @@
 
   </a>
 </p>
-<?php /**PATH /var/www/html/wp-content/themes/starter-theme/resources/views/partials/entry-meta.blade.php ENDPATH**/ ?>
+<?php /**PATH /var/www/html/wp-content/themes/wp-hoob/resources/views/partials/entry-meta.blade.php ENDPATH**/ ?>

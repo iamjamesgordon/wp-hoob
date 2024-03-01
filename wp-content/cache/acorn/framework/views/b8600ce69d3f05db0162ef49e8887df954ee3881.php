@@ -15,4 +15,4 @@
 
   <button><?php echo e(_x('Search', 'submit button', 'sage')); ?></button>
 </form>
-<?php /**PATH /var/www/html/wp-content/themes/starter-theme/resources/views/forms/search.blade.php ENDPATH**/ ?>
+<?php /**PATH /var/www/html/wp-content/themes/wp-hoob/resources/views/forms/search.blade.php ENDPATH**/ ?>

@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 defaults:
   run:
-    working-directory: wp-content/themes/starter-theme
+    working-directory: wp-content/themes/wp-hoob
 
 jobs:
   boilerplate_lint_and_test:

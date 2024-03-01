@@ -14,7 +14,7 @@ On compilation Webpack will add a hash to the end of each file created, this is 
 
 ## TDD
 PHPUNIT has been installed to allowed for test driven development. To be able to use WordPress native functions WP_MOCK has been installed with the PHPUNIT.
-All tests live in the **wp-content/themes/starter-theme/test** folder with two examples, one with WordPress function and one without.
+All tests live in the **wp-content/themes/wp-hoob/test** folder with two examples, one with WordPress function and one without.
 
 **Commands**
 - ./vendor/bin/phpunit tests
@@ -53,11 +53,11 @@ Each variable under the **Docker Variables** header should be set
 For consistency and simplifying the development experience scripts have been created for the regular tasks.
 
 ## Testing
-For testing access the starter-theme folder and run the command below in the command line. This will access all the tests in the tests/ folder with the suffix Test.php
+For testing access the wp-hoob folder and run the command below in the command line. This will access all the tests in the tests/ folder with the suffix Test.php
 - script/tests.sh
 
 ## Linting
-To format the php code and apply consistency to the formatting, access the starter-theme folder
+To format the php code and apply consistency to the formatting, access the wp-hoob folder
 - script/linting.sh
 
 ## WordPress Docker Container - WP-CLI

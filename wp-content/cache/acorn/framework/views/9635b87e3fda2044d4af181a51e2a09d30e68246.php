@@ -23,4 +23,4 @@
 
   <?php (comments_template()); ?>
 </article>
-<?php /**PATH /var/www/html/wp-content/themes/starter-theme/resources/views/partials/content-single.blade.php ENDPATH**/ ?>
+<?php /**PATH /var/www/html/wp-content/themes/wp-hoob/resources/views/partials/content-single.blade.php ENDPATH**/ ?>

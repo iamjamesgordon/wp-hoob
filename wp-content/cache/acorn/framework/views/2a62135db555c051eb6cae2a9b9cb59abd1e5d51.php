@@ -6,4 +6,4 @@
 
   </nav>
 <?php endif; ?>
-<?php /**PATH /var/www/html/wp-content/themes/starter-theme/resources/views/partials/content-page.blade.php ENDPATH**/ ?>
+<?php /**PATH /var/www/html/wp-content/themes/wp-hoob/resources/views/partials/content-page.blade.php ENDPATH**/ ?>

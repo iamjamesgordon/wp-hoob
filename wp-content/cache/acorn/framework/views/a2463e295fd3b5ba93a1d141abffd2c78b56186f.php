@@ -54,4 +54,4 @@
     <?php (comment_form()); ?>
   </section>
 <?php endif; ?>
-<?php /**PATH /var/www/html/wp-content/themes/starter-theme/resources/views/partials/comments.blade.php ENDPATH**/ ?>
+<?php /**PATH /var/www/html/wp-content/themes/wp-hoob/resources/views/partials/comments.blade.php ENDPATH**/ ?>

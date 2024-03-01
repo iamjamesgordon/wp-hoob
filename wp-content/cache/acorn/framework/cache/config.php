@@ -81,10 +81,10 @@
     array (
       'theme' => 
       array (
-        'path' => '/var/www/html/wp-content/themes/starter-theme/public',
-        'url' => 'http://localhost:8000/wp-content/themes/starter-theme/public',
-        'assets' => '/var/www/html/wp-content/themes/starter-theme/public/manifest.json',
-        'bundles' => '/var/www/html/wp-content/themes/starter-theme/public/entrypoints.json',
+        'path' => '/var/www/html/wp-content/themes/wp-hoob/public',
+        'url' => 'http://localhost:8000/wp-content/themes/wp-hoob/public',
+        'assets' => '/var/www/html/wp-content/themes/wp-hoob/public/manifest.json',
+        'bundles' => '/var/www/html/wp-content/themes/wp-hoob/public/entrypoints.json',
       ),
     ),
   ),
@@ -273,7 +273,7 @@
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => '/var/www/html/wp-content/themes/starter-theme/database/database.sqlite',
+        'database' => '/var/www/html/wp-content/themes/wp-hoob/database/database.sqlite',
         'prefix' => '',
         'foreign_key_constraints' => true,
       ),
@@ -407,7 +407,7 @@
     ),
     'links' => 
     array (
-      '/var/www/html/wp-content/themes/starter-theme/public/storage' => '/var/www/html/wp-content/cache/acorn/app/public',
+      '/var/www/html/wp-content/themes/wp-hoob/public/storage' => '/var/www/html/wp-content/cache/acorn/app/public',
     ),
   ),
   'hashing' => 
@@ -570,7 +570,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => '/var/www/html/wp-content/themes/starter-theme/resources/views/vendor/mail',
+        0 => '/var/www/html/wp-content/themes/wp-hoob/resources/views/vendor/mail',
       ),
     ),
   ),
@@ -695,9 +695,9 @@
   array (
     'paths' => 
     array (
-      0 => '/var/www/html/wp-content/themes/starter-theme/resources/views',
-      1 => '/var/www/html/wp-content/themes/starter-theme/resources/views',
-      2 => '/var/www/html/wp-content/themes/starter-theme/resources/views',
+      0 => '/var/www/html/wp-content/themes/wp-hoob/resources/views',
+      1 => '/var/www/html/wp-content/themes/wp-hoob/resources/views',
+      2 => '/var/www/html/wp-content/themes/wp-hoob/resources/views',
     ),
     'compiled' => '/var/www/html/wp-content/cache/acorn/framework/views',
     'debug' => false,

@@ -35,4 +35,4 @@
     <?php (wp_footer()); ?>
   </body>
 </html>
-<?php /**PATH /var/www/html/wp-content/themes/starter-theme/resources/views/layouts/app.blade.php ENDPATH**/ ?>
+<?php /**PATH /var/www/html/wp-content/themes/wp-hoob/resources/views/layouts/app.blade.php ENDPATH**/ ?>
