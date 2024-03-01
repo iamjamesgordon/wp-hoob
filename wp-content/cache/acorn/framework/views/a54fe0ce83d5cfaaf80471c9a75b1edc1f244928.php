@@ -11,4 +11,4 @@
     </nav>
   <?php endif; ?>
 </header>
-<?php /**PATH /var/www/html/wp-content/themes/starter-theme/resources/views/sections/header.blade.php ENDPATH**/ ?>
+<?php /**PATH /var/www/html/wp-content/themes/wp-hoob/resources/views/sections/header.blade.php ENDPATH**/ ?>

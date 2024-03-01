@@ -14,4 +14,4 @@
     <?php (the_excerpt()); ?>
   </div>
 </article>
-<?php /**PATH /var/www/html/wp-content/themes/starter-theme/resources/views/partials/content.blade.php ENDPATH**/ ?>
+<?php /**PATH /var/www/html/wp-content/themes/wp-hoob/resources/views/partials/content.blade.php ENDPATH**/ ?>

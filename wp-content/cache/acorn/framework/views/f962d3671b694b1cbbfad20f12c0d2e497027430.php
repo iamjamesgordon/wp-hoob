@@ -32,4 +32,4 @@
   <?php echo $message ?? $slot; ?>
 
 </div>
-<?php /**PATH /var/www/html/wp-content/themes/starter-theme/resources/views/components/alert.blade.php ENDPATH**/ ?>
+<?php /**PATH /var/www/html/wp-content/themes/wp-hoob/resources/views/components/alert.blade.php ENDPATH**/ ?>
