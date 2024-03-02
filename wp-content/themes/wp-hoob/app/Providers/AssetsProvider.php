@@ -11,8 +11,8 @@ class AssetsProvider extends ServiceProvider
 
     public function __construct()
     {
-        $this->ManifestFile = json_decode(file_get_contents(get_stylesheet_directory(). "/public/manifest.json"), true);
-        $this->ManifestPath = dirname(get_stylesheet_directory_uri(). "/public/manifest.json");
+        $this->ManifestFile = json_decode(file_get_contents(get_stylesheet_directory(). "/public/assets/manifest.json"), true);
+        $this->ManifestPath = dirname(get_stylesheet_directory_uri(). "/public/assets/manifest.json");
     }
 
     /**

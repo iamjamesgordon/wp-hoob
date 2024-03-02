@@ -29,7 +29,7 @@ module.exports = {
         minimize: true
     },
     output: {
-        path: path.resolve(__dirname, './public'),
+        path: path.resolve(__dirname, './public/assets'),
         filename: './js/[name]-[hash].js',
         chunkFilename: '[id]-[chunkhash].js',
         clean: true
