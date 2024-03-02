@@ -2,7 +2,11 @@
 @import './vendors/vendors';
 @import './base/base';
 @import './components/components';
+
+/* Layouts */
 @import './layout/layout';
+@import './layout/grid';
+
 @import './pages/pages';
 @import './themes/themes';
 @import 'settings';
