@@ -1,5 +1,16 @@
-@import 'grid';
-@import 'footer';
-@import 'forms';
-@import 'navbar';
-@import 'sidebar';
+.content-width-lg, .content-width-md, .content-width-md {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-width-lg {
+    width: var(--wp--style--global--full-size);
+}
+
+.content-width-md {
+    width: var(--wp--style--global--content-size);
+}
+
+.content-width-sm {
+    width: 560px;
+}
