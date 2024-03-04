@@ -1,0 +1,202 @@
+.hoobBanner {
+    position: relative;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+    }
+
+}
+
+.hoobBanner--landing {
+
+    @media only screen and (min-width: $breakpoint-tablet) {
+        height: 776px;
+    }
+
+    &__sparkle {}
+
+    &__positions,
+    &__header,
+    &__text,
+    &__searchField {
+        display: block;
+        margin-bottom: $padding-lg;
+        margin-top: 0;
+    }
+
+    &__positions {}
+
+    &__header {
+        color: var(--wp-preset--color--black-100);
+        font-size: var(--wp--preset--font-size--header-1);
+        line-height: 110%;
+    }
+
+    &__text {
+        color: var(--wp-preset--color--black-70);
+        font-size: var(--wp--preset--font-size--body-large);
+    }
+
+    &__searchField {
+        width: calc(100% + 245px);
+    }
+
+    &__imgWrap {
+
+        width: 100%;
+        position: relative;
+        height: 400px;
+        overflow: hidden;
+
+        @media only screen and (min-width: $breakpoint-tablet) {
+            width: 50vw;
+            height: 776px;
+            position: absolute;
+            left: calc(-100% - 30px);
+            margin-left: calc(100% + 30px);
+
+        }
+
+    }
+
+    &__img {
+        object-fit: fill;
+        width: auto;
+        height: 100%;
+    }
+
+    &__left {}
+
+    &__right {
+        position: relative;
+    }
+
+}
+
+.hoobBanner--pageBanner1 {
+
+    &__subHeader,
+    &__header,
+    &__text {
+        margin-bottom: $padding-lg;
+    }
+
+    &__subHeader {
+        font-size: var(--wp--preset--font-size--header-2);
+    }
+
+    &__header {
+        font-size: var(--wp--preset--font-size--header-1);
+    }
+
+    &__text {
+        font-size: var(--wp--preset--font-size--body-large);
+    }
+
+    &__imgWrap {
+        max-width: calc(100% - 60px);
+        margin: auto;
+    }
+
+    &__img {
+
+    }
+
+}
+
+.hoobBanner--pageBanner2 {
+
+    &__header {
+        font-size: var(--wp--preset--font-size--header-1);
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: $padding-lg;
+        @media only screen and (min-width: $breakpoint-tablet) {
+            text-align: center;
+        }
+
+    }
+
+    &__footer {
+
+        height: 500px;
+
+        @media only screen and (min-width: $breakpoint-tablet) {
+            height: 300px;
+            overflow: hidden;
+            padding-left: $padding-lg;
+            padding-right: $padding-lg;
+        }
+    }
+
+    &__imgWrap {
+
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    img {
+        width: auto;
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+    }
+
+}
+
+/* HTML-BUILDER
+    <div style="max-width: 1200px; margin: auto;">
+        <h2>Landing Banner</h2>
+        <div class="">
+            <div class="hoobGrid hoobGrid-2--one hoobBanner hoobBanner--landing">
+                <div class="hoobBanner--landing__left">
+                    <span class="hoobBanner--landing__positions">2886 positions</span>
+                    <h1 class="hoobBanner--landing__header">Finding your next exciting startup job</h1>
+                    <p class="hoobBanner--landing__text">Lorem ipsum dolor sit amet consectetur. Orci augue eu a et tincidunt. Fringilla tincidunt tempor euismod porttitor quis id ame.</p>
+                    <div class="hoobBanner--landing__searchField">Search field here</div>
+                    <div class="hoobGrid hoobGrid-auto--three hoobBanner--landing__logos">
+                        <img src="../../../public/images/spotify.svg" />
+                        <img src="../../../public/images/slack.svg" />
+                        <img src="../../../public/images/pipefy.svg" />
+                        <img src="../../../public/images/webflow.svg" />
+                        <img src="../../../public/images/discord.svg" />
+                    </div>
+                </div>
+                <div class="hoobBanner--landing__right">
+                    <div class="hoobBanner--landing__imgWrap">
+                        <img class="hoobBanner--landing__img" src="../../../public/images/landing-banner-img.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Page Banner 1</h2>
+        <div class="hoobGrid hoobGrid-2--three hoobBanner hoobBanner--pageBanner1">
+            <div class="">
+                <span class="hoobBanner--pageBanner1__subHeader">Got an idea?</span>
+                <h1 class="hoobBanner--pageBanner1__subHeader">Let’s talk.</h1>
+                <p class="hoobBanner--pageBanner1__text">Leave us a note here,
+                or give us a call at (312) 448-7405.</p>
+            </div>
+            <div class="hoobBanner--pageBanner1__imgWrap">
+                <img class="hoobBanner--pageBanner1__img" src="../../../public/images/pattern-sparkle-3.svg" />
+            </div>
+        </div>
+
+        <h2>Page Banner 2</h2>
+        <div class="hoobBanner hoobBanner--pageBanner2">
+            <h1 class="hoobBanner--pageBanner2__header">The Job is a free-of-charge community platform tailored to the needs of growth startups.</h1>
+            <div class="hoobGrid hoobGrid-2--two hoobBanner--pageBanner2__footer">
+                <div class="hoobBanner--pageBanner2__imgWrap">
+                    <img class="" src="../../../public/images/page-banner1.png" />
+                </div>
+                <div class="hoobBanner--pageBanner2__imgWrap">
+                    <img class="" src="../../../public/images/page-banner2.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+*/
