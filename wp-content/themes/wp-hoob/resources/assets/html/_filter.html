@@ -15,6 +15,119 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
 </style>
     <body> 	
-    <div>This is a test comp!</div>
+
+<form action="/" class="hoobFilter">
+
+    <div class="hoobFilter__top">
+
+        <span class="hoobFilter__header">Filters</span>
+        <input class="hoobFilter__clear" type="reset" value="Clear">
+
+    </div>
+
+    <div class="hoobFilter__section">
+
+        <button class="hoobFilter__sectionTop">
+            <span class="hoobFilter__sectionHeader">Seniority Level</span>
+            <svg class="hoobFilter__arrowUp" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 13L12 9L8 13" stroke="#222325" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+
+        <div class="hoobFilter__sectionInner hoobFilter__sectionInner--close">
+
+            <div class="hoobFilter__row">
+                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
+                    <input type="checkbox">
+                    <span class="hoobCheckBox__checkmark"></span>
+                </label>
+            </div>
+            <div class="hoobFilter__row">
+                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
+                    <input type="checkbox">
+                    <span class="hoobCheckBox__checkmark"></span>
+                </label>
+            </div>
+            <div class="hoobFilter__row">
+                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
+                    <input type="checkbox" checked="checked">
+                    <span class="hoobCheckBox__checkmark"></span>
+                </label>
+            </div>
+
+            <span class="hoobFilter__seeMore">
+                See More
+                <svg class="hoobFilter__arrowDown" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 13L12 9L8 13" stroke="#222325" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="hoobFilter__section">
+
+        <div class="hoobFilter__sectionTop" tabindex=0>
+            <span class="hoobFilter__sectionHeader">Job Type</span>
+            <svg class="hoobFilter__arrowUp" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 13L12 9L8 13" stroke="#222325" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <div class="hoobFilter__sectionInner">
+
+            <div class="hoobFilter__row">
+                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
+                    <input type="checkbox">
+                    <span class="hoobCheckBox__checkmark"></span>
+                </label>
+            </div>
+            <div class="hoobFilter__row">
+                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
+                    <input type="checkbox">
+                    <span class="hoobCheckBox__checkmark"></span>
+                </label>
+            </div>
+            <div class="hoobFilter__row">
+                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
+                    <input type="checkbox">
+                    <span class="hoobCheckBox__checkmark"></span>
+                </label>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hoobFilter__section">
+
+        <div class="hoobFilter__sectionTop" tabindex=0>
+            <span class="hoobFilter__sectionHeader">Salary</span>
+            <svg class="hoobFilter__arrowUp" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 13L12 9L8 13" stroke="#222325" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <div class="hoobFilter__row">
+            <div class="hoobFilter__rowGrid">
+                <select name="minSalary" id="minSalary">
+                    <option value="upTo20k">Up to 20k</option>
+                    <option value="20kto40k">20k to 40k</option>
+                    <option value="40kto60k">40k to 60k</option>
+                    <option value="over60k">Over 60k</option>
+                </select>
+                <select name="minSalary" id="minSalary">
+                    <option value="upTo20k">Up to 20k</option>
+                    <option value="20kto40k">20k to 40k</option>
+                    <option value="40kto60k">40k to 60k</option>
+                    <option value="over60k">Over 60k</option>
+                </select>
+            </div>
+        </div>
+
+</form>
+
 </body>
 </html>
