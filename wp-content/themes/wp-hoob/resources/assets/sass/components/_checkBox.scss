@@ -1,0 +1,80 @@
+.hoobCheckBox {
+
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: var(--wp--preset--font-size--body-large);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: var(--wp--preset--font-size--body-large);
+    color: var(--wp--preset--color--black-100);
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    &__checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: none;
+        border: 2px solid var(--wp--preset--color--white-70);
+        border-radius: 5px;
+    }
+
+    &:hover input~&__checkmark {
+        background-color: var(--wp--preset--color--white-40);
+        border: 2px solid var(--wp--preset--color--white-40);
+    }
+
+    input:checked~&__checkmark {
+        background-color: var(--wp--preset--color--black-100);
+        border: 2px solid var(--wp--preset--color--black-100);
+    }
+
+    &__checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    input:checked~&__checkmark:after {
+        display: block;
+    }
+
+    &__checkmark:after {
+        left: 6px;
+        top: 2px;
+        width: 5px;
+        height: 10px;
+        border: solid var(--wp--preset--color--white-100);
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    &__total {
+        color: var(--wp--preset--color--black-60);
+    }
+
+}
+
+/* HTML-BUILDER
+<div class="">
+    <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
+        <input type="checkbox" checked="checked">
+        <span class="hoobCheckBox__checkmark"></span>
+    </label>
+</div>
+*/
