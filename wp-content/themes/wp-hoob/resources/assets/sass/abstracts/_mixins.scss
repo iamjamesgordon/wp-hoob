@@ -1,3 +1,8 @@
+@mixin dropShadow--base {
+  -webkit-box-shadow: 10px 10px 0px 0px var(--wp--preset--color--primary-base);
+  -moz-box-shadow: 10px 10px 0px 0px var(--wp--preset--color--primary-base);
+  box-shadow: 10px 10px 0px 0px var(--wp--preset--color--primary-base);
+}
 @mixin breakpoint($point) {
   @if $point == largedesktop {
     @media (max-width: 1920px) and (min-width: 1441px) {
