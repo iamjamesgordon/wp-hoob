@@ -1,0 +1,137 @@
+.hoobBtn {
+
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--wp--preset--color--black-100);
+
+
+    &__text {
+
+        color: var(--wp--preset--color--black-100);
+    }
+
+    &__icon {}
+
+}
+
+.hoobBtn--black {
+
+    &.hoobBtn {
+        background-color: var(--wp--preset--color--black-100);
+
+        .hoobBtn {
+            &__icon {
+                stroke: var(--wp--preset--color--white-100) !important;
+            }
+
+            &__text {
+                color: var(--wp--preset--color--white-100);
+            }
+        }
+
+    }
+
+}
+
+.hoobBtn--white {
+
+    &.hoobBtn {
+        background-color: var(--wp--preset--color--white-100);
+
+        .hoobBtn {
+            &__icon {
+                stroke: var(--wp--preset--color--black-100) !important;
+            }
+
+            &__text {
+                color: var(--wp--preset--color--black-100);
+            }
+
+        }
+
+    }
+
+}
+
+.hoobBtn--lg {
+
+    &.hoobBtn {
+        font-size: var(--wp--preset--font-size--body-large);
+        padding: $padidng-sm $padding-lg;
+
+        .hoobBtn {
+            &__icon {
+                width: 16px !important;
+                height: auto !important;
+            }
+        }
+
+    }
+
+}
+
+.hoobBtn--sm {
+
+    &.hoobBtn {
+        font-size: var(--wp--preset--font-size--body-small);
+        padding: $padidng-sm $padding-md;
+
+        .hoobBtn {
+            &__icon {
+                width: 12px !important;
+                height: auto !important;
+            }
+        }
+
+    }
+
+}
+
+.hoobBtn--icon {
+
+    &.hoobBtn {
+
+        .hoobBtn {
+            &__icon {
+                margin-right: $padidng-sm;
+            }
+        }
+
+    }
+
+}
+
+/* HTML-BUILDER
+
+<a class="hoobBtn hoobBtn--black hoobBtn--sm hoobBtn--icon" href="#">
+    <svg class="hoobBtn__icon" width="" height="" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.75 9.75L6.75 1.25V6.25H11.25L5.5 14.75V9.75H0.75Z" stroke="#FBFBFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="hoobBtn__text">Label</span>
+</a>
+<br>
+<a class="hoobBtn hoobBtn--black hoobBtn--lg hoobBtn--icon" href="#">
+    <svg class="hoobBtn__icon" width="" height="" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.75 9.75L6.75 1.25V6.25H11.25L5.5 14.75V9.75H0.75Z" stroke="#FBFBFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="hoobBtn__text">Label</span>
+</a>
+<br>
+<a class="hoobBtn hoobBtn--white hoobBtn--sm hoobBtn--icon" href="#">
+    <svg class="hoobBtn__icon" width="" height="" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.75 9.75L6.75 1.25V6.25H11.25L5.5 14.75V9.75H0.75Z" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="hoobBtn__text">Label</span>
+</a>
+<br>
+<a class="hoobBtn hoobBtn--white hoobBtn--lg hoobBtn--icon" href="#">
+    <svg class="hoobBtn__icon" width="" height="" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.75 9.75L6.75 1.25V6.25H11.25L5.5 14.75V9.75H0.75Z" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="hoobBtn__text">Label</span>
+</a>
+
+*/
