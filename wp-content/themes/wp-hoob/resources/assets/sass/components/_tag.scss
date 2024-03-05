@@ -1,0 +1,86 @@
+.hoobTag {
+    width: fit-content;
+    display: block;
+    padding: $padidng-sm $padding-md;
+}
+
+.hoobTag--rounded {
+
+    &.hoobTag {
+        border-radius: 25px;
+    }
+}
+
+.hoobTag--square {
+
+    &.hoobTag {
+        border-radius: 10px;
+    }
+}
+
+.hoobTag--grey {
+
+    &.hoobTag {
+        background-color: var(--wp--preset--color--black-30);
+        color: var(--wp--preset--color--black-100);
+    }
+}
+
+.hoobTag--primary {
+
+    &.hoobTag {
+        background-color: var(--wp--preset--color--primary-base);
+        color: var(--wp--preset--color--black-100);
+    }
+}
+
+.hoobTag--blue {
+
+    &.hoobTag {
+        background-color: var(--wp--preset--color--blue-tint);
+        color: var(--wp--preset--color--blue-dark);
+    }
+}
+
+.hoobTag--green {
+
+    &.hoobTag {
+        background-color: var(--wp--preset--color--green-tint);
+        color: var(--wp--preset--color--green-dark);
+    }
+}
+
+.hoobTag--bold {
+
+    &.hoobTag {
+        font-weight: bold;
+    }
+}
+
+.hoobTag--sm {
+
+    &.hoobTag {
+        font-size: var(--wp--preset--font-size--body-small);
+    }
+}
+
+.hoobTag--md {
+
+    &.hoobTag {
+        font-size: var(--wp--preset--font-size--body-medium);
+    }
+}
+
+.hoobTag--lg {
+
+    &.hoobTag {
+        font-size: var(--wp--preset--font-size--body-large);
+    }
+}
+
+/* HTML-BUILDER
+<span class="hoobTag hoobTag--rounded hoobTag--grey hoobTag--lg">2886 open positions</span>
+<span class="hoobTag hoobTag--square hoobTag--primary hoobTag--md">FAST APPLY</span>
+<span class="hoobTag hoobTag--square hoobTag--blue hoobTag--md">Save</span>
+<span class="hoobTag hoobTag--square hoobTag--green hoobTag--md">Applied</span>
+*/
