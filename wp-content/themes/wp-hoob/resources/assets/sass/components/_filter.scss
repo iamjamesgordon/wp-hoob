@@ -1,0 +1,207 @@
+.hoobFilter {
+
+    max-width: 300px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $padding-md;
+    }
+
+    &__header {
+        font-size: var(--wp--preset--font-size--header-3);
+        color: var(--wp--preset--color--black-100);
+    }
+
+    &__clear {
+        font-size: var(--wp--preset--font-size--header-5);
+        color: var(--wp--preset--color--black-50);
+        background-color: transparent;
+        outline: none;
+        border: none;
+    }
+
+    &__section {}
+
+    &__sectionTop {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: var(--wp--preset--font-size--header-3);
+        margin-bottom: $padding-md;
+        padding: 0;
+        border: 0;
+        outline: none;
+        background-color: transparent;
+    }
+
+    &__sectionInner {
+        margin-bottom: $padding-md;
+    }
+
+    &__sectionInner--close {
+        height: 0;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    &__sectionTop--close > &__arrowUp {
+        transform: rotate(180deg);
+    }
+
+    &__arrowUp {
+        width: 30px;
+        height: auto;
+        transform: rotate(0deg);
+    }
+
+    &__arrowDown {
+        width: 30px;
+        height: auto;
+        transform: rotate(180deg);
+    }
+
+    &__seeMore,
+    &__sectionTop {
+        font-size: var(--wp--preset--font-size--body-large);
+    }
+
+    &__sectionHeader {
+        display: block;
+        color: var(--wp--preset--color--black-100);
+        font-size: var(--wp--preset--font-size--header-5);
+    }
+
+    &__row {}
+
+    &__rowGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: $padding-md;
+    }
+
+    &__seeMore {
+        display: flex;
+        align-items: center;
+        margin-top: $padding-md;
+    }
+
+}
+
+/* HTML-BUILDER
+
+<form action="/" class="hoobFilter">
+
+    <div class="hoobFilter__top">
+
+        <span class="hoobFilter__header">Filters</span>
+        <input class="hoobFilter__clear" type="reset" value="Clear">
+
+    </div>
+
+    <div class="hoobFilter__section">
+
+        <button class="hoobFilter__sectionTop">
+            <span class="hoobFilter__sectionHeader">Seniority Level</span>
+            <svg class="hoobFilter__arrowUp" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 13L12 9L8 13" stroke="#222325" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+
+        <div class="hoobFilter__sectionInner hoobFilter__sectionInner--close">
+
+            <div class="hoobFilter__row">
+                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
+                    <input type="checkbox">
+                    <span class="hoobCheckBox__checkmark"></span>
+                </label>
+            </div>
+            <div class="hoobFilter__row">
+                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
+                    <input type="checkbox">
+                    <span class="hoobCheckBox__checkmark"></span>
+                </label>
+            </div>
+            <div class="hoobFilter__row">
+                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
+                    <input type="checkbox" checked="checked">
+                    <span class="hoobCheckBox__checkmark"></span>
+                </label>
+            </div>
+
+            <span class="hoobFilter__seeMore">
+                See More
+                <svg class="hoobFilter__arrowDown" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 13L12 9L8 13" stroke="#222325" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="hoobFilter__section">
+
+        <div class="hoobFilter__sectionTop" tabindex=0>
+            <span class="hoobFilter__sectionHeader">Job Type</span>
+            <svg class="hoobFilter__arrowUp" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 13L12 9L8 13" stroke="#222325" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <div class="hoobFilter__sectionInner">
+
+            <div class="hoobFilter__row">
+                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
+                    <input type="checkbox">
+                    <span class="hoobCheckBox__checkmark"></span>
+                </label>
+            </div>
+            <div class="hoobFilter__row">
+                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
+                    <input type="checkbox">
+                    <span class="hoobCheckBox__checkmark"></span>
+                </label>
+            </div>
+            <div class="hoobFilter__row">
+                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
+                    <input type="checkbox">
+                    <span class="hoobCheckBox__checkmark"></span>
+                </label>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hoobFilter__section">
+
+        <div class="hoobFilter__sectionTop" tabindex=0>
+            <span class="hoobFilter__sectionHeader">Salary</span>
+            <svg class="hoobFilter__arrowUp" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 13L12 9L8 13" stroke="#222325" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <div class="hoobFilter__row">
+            <div class="hoobFilter__rowGrid">
+                <select name="minSalary" id="minSalary">
+                    <option value="upTo20k">Up to 20k</option>
+                    <option value="20kto40k">20k to 40k</option>
+                    <option value="40kto60k">40k to 60k</option>
+                    <option value="over60k">Over 60k</option>
+                </select>
+                <select name="minSalary" id="minSalary">
+                    <option value="upTo20k">Up to 20k</option>
+                    <option value="20kto40k">20k to 40k</option>
+                    <option value="40kto60k">40k to 60k</option>
+                    <option value="over60k">Over 60k</option>
+                </select>
+            </div>
+        </div>
+
+</form>
+
+*/
