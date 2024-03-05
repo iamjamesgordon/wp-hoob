@@ -1,0 +1,42 @@
+.hoobSelect {
+
+    &__labelWrap {
+
+    }
+
+    &__label {
+        display: block;
+        font-size: var(--wp--preset--font-size--body-medium);
+        margin-bottom: $padidng-sm;
+    }
+
+    &__select {
+        min-width: 127px;
+        padding: $padidng-sm;
+        font-size: var(--wp--preset--font-size--body-medium);
+        color: var(--wp--preset--color--white-50);
+        border-radius: 6px;
+        border: 2px solid var(--wp--preset--color--white-70);
+        appearance: none;
+        background-color: var(--wp--preset--color--white-100);
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='#69696B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right 1rem center;
+        background-size: 1em;
+    }
+
+}
+
+/* HTML-BUILDER
+
+<label for="cars" class="hoobSelect__labelWrap"><span class="hoobSelect__label">Choose a min salary:</span>
+<select name="minSalary" class="hoobSelect__select">
+  <option value="" disabled selected>$ min</option>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+</label>
+
+*/
