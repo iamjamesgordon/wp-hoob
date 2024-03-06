@@ -1,0 +1,72 @@
+.hoobCta {
+
+    display: flex;
+    align-items: center;
+    color: var(--wp--preset--color--black-100);
+    text-decoration: none;
+
+    &__text {
+        font-size: var(--wp--preset--font-size--body-large);
+    }
+
+    &__icon {
+        width: 24px;
+        height: auto;
+    }
+
+}
+
+.hoobCta--ltr {
+
+    &.hoobCta {
+
+        flex-direction: row;
+
+        .hoobCta {
+            &__icon {
+                margin-left: 5px;
+            }
+        }
+
+    }
+
+}
+
+.hoobCta--rtl {
+
+    &.hoobCta {
+
+        .hoobCta {
+
+            &__icon {
+
+                margin-right: 5px;
+                transform: rotate(180deg);
+
+            }
+
+        }
+
+    }
+
+}
+
+/* HTML-BUILDER
+
+<a class="hoobCta hoobCta--ltr" href="">
+    <span class="hoobCta__text">See All Categories</span>
+    <svg class="hoobCta__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 12H7" stroke="#160042" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M13 8L17 12L13 16" stroke="#160042" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</a>
+
+<a class="hoobCta hoobCta--rtl" href="">
+    <svg class="hoobCta__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 12H7" stroke="#160042" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M13 8L17 12L13 16" stroke="#160042" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="hoobCta__text">See All Categories</span>
+</a>
+
+*/
