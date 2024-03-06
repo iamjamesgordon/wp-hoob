@@ -12,3 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Hamburger function loaded");
+    const hamburger = document.querySelector('.hoobHamburger');
+
+    hamburger.addEventListener('click', function (event) {
+        const mobMenuBody = this.closest('.hoobMobMenu');
+        event.preventDefault();
+        mobMenuBody.classList.toggle("hoobMobMenu--open");
+        this.classList.toggle("hoobHamburger--open");
+    });
+
+});
