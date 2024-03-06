@@ -1,0 +1,78 @@
+.hoobHamburger {
+
+    width: 25px;
+    height: 18px;
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    &__line {
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        opacity: 1;
+        background-color: var(--wp--preset--color--black-100);
+
+        &:first-of-type {
+            top: 0;
+            transform: rotate(0deg);
+        }
+
+        &:nth-of-type(2) {
+            top: 50%;
+            transform: translateY(-50%) rotate(0deg);
+        }
+
+        &:last-of-type {
+            bottom: 0;
+            transform: rotate(0deg);
+        }
+
+    }
+
+}
+
+.hoobHamburger--open {
+
+    &.hoobHamburger {
+
+        .hoobHamburger {
+
+            &__line {
+
+                &:first-of-type,
+                &:last-of-type {
+                    top: 50%;
+                }
+
+                &:first-of-type {
+                    transform: rotate(45deg);
+                }
+
+                &:nth-of-type(2) {
+                    opacity: 0;
+                }
+
+                &:last-of-type {
+                    transform: rotate(-45deg);
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+/* HTML-BUILDER
+
+<button class="hoobHamburger">
+    <span class="hoobHamburger__line"></span>
+    <span class="hoobHamburger__line"></span>
+    <span class="hoobHamburger__line"></span>
+</button>
+
+*/

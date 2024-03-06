@@ -1,0 +1,211 @@
+.hoobMenu {
+
+    &__list {
+        display: block;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        @media only screen and (min-width: $breakpoint-tablet) {
+            display: flex;
+        }
+
+    }
+
+    &__item {
+        margin-left: 0;
+
+        @media only screen and (min-width: $breakpoint-tablet) {
+            margin-left: $padidng-sm;;
+        }
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+    }
+
+    &__link {
+        width: fit-content;
+        display: block;
+        padding: $padidng-sm $padding-md;
+        font-size: var(--wp--preset--font-size--body-medium);
+        color: var(--wp--preset--color--black-100);
+        text-decoration: none;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: var(--wp--preset--color--primary-base);
+        }
+
+    }
+
+}
+
+.hoobMenu--lg {
+
+    &.hoobMenu {
+
+        .hoobMenu {
+
+            &__link {
+                font-size: var(--wp--preset--font-size--body-medium);
+            }
+
+        }
+
+    }
+
+}
+
+.hoobMenu--sm {
+
+    &.hoobMenu {
+
+        .hoobMenu {}
+
+    }
+
+}
+
+.hoobMenu--light {
+
+    &.hoobMenu {
+
+        .hoobMenu {
+            &__link {
+                color: var(--wp--preset--color--white-60);
+
+                &:hover {
+                    color: var(--wp--preset--color--black-100);
+                }
+
+            }
+        }
+
+    }
+
+}
+
+.hoobMenu--mob {
+
+    &.hoobMenu {
+
+        .hoobMenu {
+
+            &__list {
+                display: block;
+            }
+
+            &__item {
+                margin-left: 0;
+            }
+
+            &__link {
+                width: 100%;
+                text-align: center;
+                font-size: var(--wp--preset--font-size--header-4);
+            }
+
+        }
+
+    }
+
+}
+
+.hoobMenu--mobFooter {
+
+    &.hoobMenu {
+
+        .hoobMenu {
+
+            position: absolute;
+            bottom: 0;
+            margin: auto;
+
+            &__list {
+                display: flex;
+                justify-content: center;
+            }
+
+            &__item {
+                flex: 0 0 33.3333%;
+                text-align: center;
+            }
+
+            &__link {
+                display: unset;
+            }
+
+        }
+
+    }
+
+}
+
+/* HTML-BUILDER
+<nav class="hoobMenu">
+    <ul class="hoobMenu__list">
+        <li class="hoobMenu__item">
+            <a class="hoobMenu__link" href="#">Link 1</a>
+        </li>
+        <li class="hoobMenu__item">
+            <a class="hoobMenu__link" href="#">Link 2</a>
+        </li>
+        <li class="hoobMenu__item">
+            <a class="hoobMenu__link" href="#">Link 3</a>
+        </li>
+        <li class="hoobMenu__item">
+            <a class="hoobMenu__link" href="#">Link 4</a>
+        </li>
+    </ul>
+</nav>
+<br>
+<nav class="hoobMenu hoobMenu--light">
+    <ul class="hoobMenu__list">
+        <li class="hoobMenu__item">
+            <a class="hoobMenu__link" href="#">Link 1</a>
+        </li>
+        <li class="hoobMenu__item">
+            <a class="hoobMenu__link" href="#">Link 2</a>
+        </li>
+        <li class="hoobMenu__item">
+            <a class="hoobMenu__link" href="#">Link 3</a>
+        </li>
+        <li class="hoobMenu__item">
+            <a class="hoobMenu__link" href="#">Link 4</a>
+        </li>
+    </ul>
+</nav>
+<br>
+<div style="max-width: 375px">
+    <nav class="hoobMenu hoobMenu--light hoobMenu--mob">
+        <ul class="hoobMenu__list">
+            <li class="hoobMenu__item">
+                <a class="hoobMenu__link" href="#">Link 1</a>
+            </li>
+            <li class="hoobMenu__item">
+                <a class="hoobMenu__link" href="#">Link 2</a>
+            </li>
+            <li class="hoobMenu__item">
+                <a class="hoobMenu__link" href="#">Link 3</a>
+            </li>
+            <li class="hoobMenu__item">
+                <a class="hoobMenu__link" href="#">Link 4</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="hoobMenu hoobMenu--mobFooter hoobMenu--sm hoobMenu--light">
+        <ul class="hoobMenu__list">
+            <li class="hoobMenu__item">
+                <a class="hoobMenu__link" href="#">Facebook</a>
+            </li>
+            <li class="hoobMenu__item">
+                <a class="hoobMenu__link" href="#">Instagram</a>
+            </li>
+            <li class="hoobMenu__item">
+                <a class="hoobMenu__link" href="#">Twitter</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+*/
