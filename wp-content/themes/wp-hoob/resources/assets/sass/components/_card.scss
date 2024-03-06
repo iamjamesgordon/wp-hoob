@@ -1,7 +1,11 @@
 .hoobCard {
+    display: block;
     padding: $padding-md;
     border-radius: 10px;
     position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--wp--preset--color--black-100);
 
     &__headerWrap {
         display: flex;
@@ -27,16 +31,14 @@
         height: 48px;
     }
 
-}
+    &__name,
+    &__role {
+        font-size: var(--wp--preset--font-size--header-4);
 
-.hoobCard--white {
-    background: white;
-}
+        @media only screen and (min-width: $breakpoint-tablet) {
+            font-size: var(--wp--preset--font-size--header-3);
+        }
 
-.hoobCard--company {
-
-    &__name {
-        font-size: var(--wp--preset--font-size--header-3);
     }
 
     &__description {
@@ -61,20 +63,6 @@
         bottom: $padding-md;
     }
 
-}
-
-.hoobCard--category {
-
-    border: 1px solid var(--wp--preset--color--black-20);
-
-}
-
-.hoobCard--job {
-
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-
     &__left {
         margin-right: $padding-md;
     }
@@ -93,19 +81,19 @@
     &__role {
         display: block;
         margin-bottom: $padding-lg;
-        font-size: var(--wp--preset--font-size--header-3);
         color: var(--wp--preset--color--black-100);
     }
 
-    &__date, &__save {
+    &__date,
+    &__save {
 
         display: block;
         margin-top: $padidng-sm;
 
         @media only screen and (min-width: $breakpoint-tablet) {
-                position: absolute;
-                right: $padding-md;
-                top: $padding-md;
+            position: absolute;
+            right: $padding-md;
+            top: $padding-md;
         }
 
     }
@@ -120,16 +108,19 @@
 
     &__meta {
         margin-bottom: $padding-md;
+
         @media only screen and (min-width: $breakpoint-tablet) {
             margin-bottom: 0px;
             flex-grow: 1;
         }
     }
 
-    &__appliedDate, &__tag {
+    &__appliedDate,
+    &__tag {
         display: block;
         margin-bottom: $padidng-sm;
         color: var(--wp--preset--color--black-60);
+
         @media only screen and (min-width: $breakpoint-tablet) {
             margin-left: $padidng-sm;
             margin-bottom: 0px;
@@ -142,44 +133,91 @@
 
 }
 
+.hoobCard--white {
+
+    &.hoobCard {
+
+        background: var(--wp--preset--color--white-100);
+
+    }
+
+
+}
+
+.hoobCard--company {
+
+    &.hoobCard {
+
+        .hoobCard {}
+
+    }
+
+}
+
+.hoobCard--category {
+
+    &.hoobCard {
+
+        border: 1px solid var(--wp--preset--color--black-20);
+
+        .hoobCard {}
+
+    }
+
+}
+
+.hoobCard--job {
+
+    &.hoobCard {
+
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+
+        .hoobCard {}
+
+    }
+
+}
+
 /* HTML-BUILDER
-    <div class="content-width-md" style="padding: 20px 0;">
+    <div class="" style="max-width: 700px; padding: 20px 0; background-color: grey;">
         <h1>Company</h1>
         <div style="max-width: 360px">
-            <div class="hoobCard hoobCard--company hoobCard--white">
+            <a href="#" class="hoobCard hoobCard--company hoobCard--white">
                 <div class="hoobCard__headerWrap">
                     <div class="hoobCard__logoWrap">
                         <img src="#" class="hoobCard__logo"/>
                     </div>
-                    <span class="hoobCard--company__name">Shopify</span>
+                    <span class="hoobCard__name">Shopify</span>
                 </div>
-                <p class="hoobCard--company__description">Slack is a cloud-based team collaboration tool founded by Stewart Butterfield, Eric C...</p>
-                <span class="hoobCard--company__jobsTotal">12 Jobs Available</span>
-                <svg class="hoobCard--company__arrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 21L21 11" stroke="#7A7B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /><path d="M14.3333 11H20.9999V17.6667" stroke="#7A7B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
-            </div>
+                <p class="hoobCard__description">Slack is a cloud-based team collaboration tool founded by Stewart Butterfield, Eric C...</p>
+                <span class="hoobCard__jobsTotal">12 Jobs Available</span>
+                <svg class="hoobCard__arrow" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 21L21 11" stroke="#7A7B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /><path d="M14.3333 11H20.9999V17.6667" stroke="#7A7B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            </a>
         </div>
     <br>
     <h1>Community</h1>
         <div style="max-width: 360px">
-            <div class="hoobCard hoobCard--category hoobCard--white">
+            <a class="hoobCard hoobCard--category">
                 <div class="hoobCard__headerWrap">
                     <div class="hoobCard__logoWrap">
                         <img src="#" class="hoobCard__logo"/>
                     </div>
-                    <span class="hoobCard--company__name">Product Designer</span>
+                    <span class="hoobCard__name">Product Designer</span>
                 </div>
-            </div>
+            </a>
         </div>
     <h1>Job 1</h1>
-    <div class="hoobCard hoobCard--job hoobCardd--white">
+    <a class="hoobCard hoobCard--job hoobCard--white">
         <div class="hoobCard__left">
             <div class="hoobCard__logoWrap">
                 <img src="#" class="hoobCard__logo"/>
             </div>
         </div>
-        <div class="hoobCard--job__content">
-            <span class="hoobCard--job__company">Mail Chimp</span>
-            <span class="hoobCard--job__role">Lead Product Designer</span>
+        <div class="hoobCard__content">
+            <span class="hoobCard__company">Mail Chimp</span>
+            <span class="hoobCard__role">Lead Product Designer</span>
             <div class="hoobMeta">
                 <div class="hoobMeta__item">
                     <svg class="hoobMeta__icon" width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 10C19 10.394 18.9224 10.7841 18.7716 11.1481C18.6209 11.512 18.3999 11.8427 18.1213 12.1213C17.8427 12.3999 17.512 12.6209 17.1481 12.7716C16.7841 12.9224 16.394 13 16 13C15.606 13 15.2159 12.9224 14.8519 12.7716C14.488 12.6209 14.1573 12.3999 13.8787 12.1213C13.6001 11.8427 13.3791 11.512 13.2284 11.1481C13.0776 10.7841 13 10.394 13 10C13 9.60603 13.0776 9.21593 13.2284 8.85195C13.3791 8.48797 13.6001 8.15726 13.8787 7.87868C14.1573 7.6001 14.488 7.37913 14.852 7.22836C15.2159 7.0776 15.606 7 16 7C16.394 7 16.7841 7.0776 17.1481 7.22836C17.512 7.37913 17.8427 7.6001 18.1213 7.87868C18.3999 8.15726 18.6209 8.48797 18.7716 8.85195C18.9224 9.21593 19 9.60603 19 10L19 10Z" stroke="#7A7B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /><path d="M16 13V20.3333" stroke="#7A7B7C" stroke-width="1.5" stroke-linecap="round" /><path d="M12 17.3335C9.03656 17.988 7 19.4296 7 21.0001C7 23.2093 11.0294 25.0001 16 25.0001C20.9706 25.0001 25 23.2093 25 21.0001C25 19.4296 22.9634 17.988 20 17.3335" stroke="#7A7B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
@@ -198,21 +236,21 @@
                     <p class="hoobMeta__text">Remote OK</p>
                 </div>
             </div>
-            <span class="hoobCard--job__date">19d ago</span>
+            <span class="hoobCard__date">19d ago</span>
         </div>
-    </div>
+    </a>
     <h1>Job 2</h1>
-    <div class="hoobCard hoobCard--job hoobCardd--white">
+    <a class="hoobCard hoobCard--job hoobCard--white">
         <div class="hoobCard__left">
             <div class="hoobCard__logoWrap">
                 <img src="#" class="hoobCard__logo"/>
             </div>
         </div>
-        <div class="hoobCard--job__content">
-            <span class="hoobCard--job__company">Mail Chimp</span>
-            <span class="hoobCard--job__role">Lead Product Designer</span>
-            <div class="hoobCard--job__footer">
-                <div class="hoobMeta hoobCard--job__meta">
+        <div class="hoobCard__content">
+            <span class="hoobCard__company">Mail Chimp</span>
+            <span class="hoobCard__role">Lead Product Designer</span>
+            <div class="hoobCard__footer">
+                <div class="hoobMeta hoobCard__meta">
                     <div class="hoobMeta__item">
                         <svg class="hoobMeta__icon" width="18" height="18" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 10C19 10.394 18.9224 10.7841 18.7716 11.1481C18.6209 11.512 18.3999 11.8427 18.1213 12.1213C17.8427 12.3999 17.512 12.6209 17.1481 12.7716C16.7841 12.9224 16.394 13 16 13C15.606 13 15.2159 12.9224 14.8519 12.7716C14.488 12.6209 14.1573 12.3999 13.8787 12.1213C13.6001 11.8427 13.3791 11.512 13.2284 11.1481C13.0776 10.7841 13 10.394 13 10C13 9.60603 13.0776 9.21593 13.2284 8.85195C13.3791 8.48797 13.6001 8.15726 13.8787 7.87868C14.1573 7.6001 14.488 7.37913 14.852 7.22836C15.2159 7.0776 15.606 7 16 7C16.394 7 16.7841 7.0776 17.1481 7.22836C17.512 7.37913 17.8427 7.6001 18.1213 7.87868C18.3999 8.15726 18.6209 8.48797 18.7716 8.85195C18.9224 9.21593 19 9.60603 19 10L19 10Z" stroke="#7A7B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /><path d="M16 13V20.3333" stroke="#7A7B7C" stroke-width="1.5" stroke-linecap="round" /><path d="M12 17.3335C9.03656 17.988 7 19.4296 7 21.0001C7 23.2093 11.0294 25.0001 16 25.0001C20.9706 25.0001 25 23.2093 25 21.0001C25 19.4296 22.9634 17.988 20 17.3335" stroke="#7A7B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
                         <p class="hoobMeta__text">Remote, (GMT-8) to (GMT+6)</p>
@@ -231,14 +269,14 @@
                     </div>
                 </div>
 
-                <span class="hoobCard--job__appliedDate">19/06/2024</span>
-                <span class="hoobCard--job__tag">Applied</span>
+                <span class="hoobCard__appliedDate">19/06/2024</span>
+                <span class="hoobCard__tag">Applied</span>
 
             </div>
 
 
         </div>
-    </div>
+    </a>
     </div>
 
 */
