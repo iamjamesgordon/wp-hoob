@@ -1,6 +1,11 @@
 .hoobGrid {
     display: grid;
-    grid-gap: $padding-lg;
+    grid-gap: $padidng-sm;
+
+    @media only screen and (min-width: $breakpoint-tablet) {
+        grid-gap: $padding-lg;
+    }
+
 }
 
 .hoobGrid-2--one,
@@ -8,48 +13,99 @@
 .hoobGrid-2--three,
 .hoobGrid-3--one {
 
-    grid-template-columns: repeat(1, 1fr);
+    &.hoobGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 }
 
 .hoobGrid-2--one {
-    @media only screen and (min-width: $breakpoint-tablet) {
-        grid-template-columns: repeat(2, 1fr);
+
+    &.hoobGrid {
+        @media only screen and (min-width: $breakpoint-tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }
 
 .hoobGrid-2--two {
-    @media only screen and (min-width: $breakpoint-tablet) {
-        grid-template-columns: 2fr 1fr;
+
+    &.hoobGrid {
+        @media only screen and (min-width: $breakpoint-tablet) {
+            grid-template-columns: 2fr 1fr;
+        }
     }
+
 }
 
 .hoobGrid-2--three {
-    @media only screen and (min-width: $breakpoint-tablet) {
-        grid-template-columns: 3fr 1fr;
+
+    &.hoobGrid {
+        @media only screen and (min-width: $breakpoint-tablet) {
+            grid-template-columns: 3fr 1fr;
+        }
     }
+
 }
 
 .hoobGrid-3--one {
-    @media only screen and (min-width: $breakpoint-tablet) {
-        grid-template-columns: repeat(2, 1fr);
+
+    &.hoobGrid {
+        @media only screen and (min-width: $breakpoint-tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media only screen and (min-width: $breakpoint-desktop) {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
-    @media only screen and (min-width: $breakpoint-desktop) {
-        grid-template-columns: repeat(3, 1fr);
+
+}
+
+.hoobGrid-auto--three,
+.hoobGrid-auto--four,
+.hoobGrid-auto--five {
+
+    &.hoobGrid {
+
+        display: inline-grid;
+        justify-items: center;
+        align-items: center;
+
+        grid-gap: $padidng-sm;
+        grid-template-columns: minmax(80px, 1fr) minmax(80px, 1fr) minmax(80px, 1fr);
+
     }
+
 }
 
 .hoobGrid-auto--three {
 
-    grid-template-columns: max-content max-content max-content;
+    &.hoobGrid {
+
+        @media only screen and (min-width: $breakpoint-tablet) {
+            grid-template-columns: max-content max-content max-content;
+        }
+
+    }
+
 }
 
 .hoobGrid-auto--four {
 
-    grid-template-columns: max-content max-content max-content max-content;
+    &.hoobGrid {
+
+        @media only screen and (min-width: $breakpoint-tablet) {
+            grid-template-columns: max-content max-content max-content max-content;
+        }
+
+    }
+
 }
 
 .hoobGrid-auto--five {
 
-    grid-template-columns: max-content max-content max-content max-content max-content;
+    @media only screen and (min-width: $breakpoint-tablet) {
+        grid-template-columns: max-content max-content max-content max-content max-content;
+    }
+
 }
