@@ -3,7 +3,6 @@
     padding: $padding-md;
     border: 2px solid var(--wp--preset--color--black-100);
     border-radius: 7px;
-    @include dropShadow--base;
 
     &__wrap {
 
@@ -107,7 +106,7 @@
 
 <div style="max-width: 1200px; margin: auto;">
     <h2>Search - Small</h2>
-    <div class="hoobSearch hoobSearch--sm">
+    <div class="hoobSearch hoobSearch--sm hoobDropShadow--base">
         <div class="hoobSearch__wrap">
             <div class="hoobSearch__inputWrap">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,7 +135,7 @@
     </div>
 
     <h2>Search - Large</h2>
-    <div class="hoobSearch hoobSearch--lg">
+    <div class="hoobSearch hoobSearch--lg hoobDropShadow--base">
         <div class="hoobSearch__wrap">
             <div class="hoobSearch__inputWrap">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
