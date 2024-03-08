@@ -9,3 +9,27 @@
   -moz-box-shadow: 10px 10px 0px 0px var(--wp--preset--color--black-100);
   box-shadow: 10px 10px 0px 0px var(--wp--preset--color--black-100);
 }
+
+@mixin font--regular {
+  font-family: var(--wp--preset--font-family--red-hat-display-regular), arial;
+}
+
+@mixin font--italic {
+  font-family: var(--wp--preset--font-family--red-hat-display-regular-italic), arial;
+}
+
+@mixin font--bold {
+    font-family: var(--wp--preset--font-family--red-hat-display-bold), arial;
+}
+
+@mixin font--bold-italic {
+  font-family: var(--wp--preset--font-family--red-hat-display-bold-italic), arial;
+}
+
+@mixin font--extra-bold {
+  font-family: var(--wp--preset--font-family--red-hat-display-extra-bold), arial;
+}
+
+@mixin font--extra-bold-italic {
+  font-family: var(--wp--preset--font-family--red-hat-display-extra-bold-italic), arial;
+}
