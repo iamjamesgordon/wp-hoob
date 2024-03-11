@@ -44,6 +44,7 @@
     &__role {
         font-family: var();
         font-size: var(--wp--preset--font-size--header-4);
+        font-family: var(--wp--preset--font-family--red-hat-display-bold);
 
         @media only screen and (min-width: $breakpoint-tablet) {
             font-size: var(--wp--preset--font-size--header-3);
@@ -213,6 +214,22 @@
 
 }
 
+.hoobCard--community {
+
+    &.hoobCard {
+
+        .hoobCard {
+
+            &__name {
+                font-family: var(--wp--preset--font-family--red-hat-display-regular);
+            }
+
+        }
+
+    }
+
+}
+
 .hoobCard--category {
 
     &.hoobCard {
@@ -242,7 +259,7 @@
 /* HTML-BUILDER
     <div class="" style="max-width: 700px; padding: 20px 0; background-color: grey;">
         <h1>Company</h1>
-        <div style="max-width: 360px">
+        <div style="max-width: 400px">
             <a href="#" class="hoobCard hoobCard--company1 hoobCard--white">
                 <div class="hoobCard__headerWrap">
                     <div class="hoobCard__logoWrap">
@@ -257,7 +274,7 @@
         </div>
     <br>
         <h1>Company2</h1>
-            <div style="max-width: 360px">
+            <div style="max-width: 400px">
                 <a href="#" class="hoobCard hoobCard--company2 hoobCard--white">
                     <div class="hoobCard__headerWrap">
                         <div class="hoobCard__logoWrap">
@@ -270,8 +287,8 @@
                 </a>
             </div>
     <h1>Community</h1>
-        <div style="max-width: 360px">
-            <a class="hoobCard hoobCard--category">
+        <div style="max-width: 400px">
+            <a class="hoobCard hoobCard--category hoobCard--community">
                 <div class="hoobCard__headerWrap">
                     <div class="hoobCard__logoWrap">
                         <img src="#" class="hoobCard__logo"/>
