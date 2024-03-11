@@ -66,9 +66,24 @@
 
 }
 
+.hoobSelect--full {
+
+    &.hoobSelect {
+
+        .hoobSelect {
+
+            &__select {
+                width: 100%;
+            }
+
+        }
+
+    }
+}
+
 /* HTML-BUILDER
 
-<label for="cars" class="hoobSelect">
+<label for="cars" class="hoobSelect hoobSelect--full">
     <span class="hoobSelect__label">Choose a min salary:</span>
     <select class="hoobSelect__select" name="minSalary">
         <option value="" disabled selected>$ min</option>
