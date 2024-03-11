@@ -13,6 +13,11 @@
         color: var(--wp--preset--color--black-100);
     }
 
+    &__sectionHeader,
+    &__header {
+        font-family: var(--wp--preset--font-family--red-hat-display-bold);
+    }
+
     &__clear {
         font-size: var(--wp--preset--font-size--header-5);
         color: var(--wp--preset--color--black-50);
@@ -112,21 +117,21 @@
         <div class="hoobFilter__sectionInner hoobFilter__sectionInner--close">
 
             <div class="hoobFilter__row">
-                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
-                    <input type="checkbox">
-                    <span class="hoobCheckBox__checkmark"></span>
+                <label class="hoobCheckBox">
+                    <input class="hoobCheckBox__checkbox" type="checkbox" checked="checked">
+                    One <span class="hoobCheckBox__total">(28)</span>
                 </label>
             </div>
             <div class="hoobFilter__row">
-                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
-                    <input type="checkbox">
-                    <span class="hoobCheckBox__checkmark"></span>
+                <label class="hoobCheckBox">
+                    <input class="hoobCheckBox__checkbox" type="checkbox" checked="checked">
+                    One <span class="hoobCheckBox__total">(28)</span>
                 </label>
             </div>
             <div class="hoobFilter__row">
-                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
-                    <input type="checkbox" checked="checked">
-                    <span class="hoobCheckBox__checkmark"></span>
+                <label class="hoobCheckBox">
+                    <input class="hoobCheckBox__checkbox" type="checkbox" checked="checked">
+                    One <span class="hoobCheckBox__total">(28)</span>
                 </label>
             </div>
 
@@ -153,21 +158,21 @@
         <div class="hoobFilter__sectionInner">
 
             <div class="hoobFilter__row">
-                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
-                    <input type="checkbox">
-                    <span class="hoobCheckBox__checkmark"></span>
+                <label class="hoobCheckBox">
+                    <input class="hoobCheckBox__checkbox" type="checkbox">
+                    One <span class="hoobCheckBox__total">(28)</span>
                 </label>
             </div>
             <div class="hoobFilter__row">
-                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
-                    <input type="checkbox">
-                    <span class="hoobCheckBox__checkmark"></span>
+                <label class="hoobCheckBox">
+                    <input class="hoobCheckBox__checkbox" type="checkbox">
+                    One <span class="hoobCheckBox__total">(28)</span>
                 </label>
             </div>
             <div class="hoobFilter__row">
-                <label class="hoobCheckBox">One <span class="hoobCheckBox__total">(28)</span>
-                    <input type="checkbox">
-                    <span class="hoobCheckBox__checkmark"></span>
+                <label class="hoobCheckBox">
+                    <input class="hoobCheckBox__checkbox" type="checkbox">
+                    One <span class="hoobCheckBox__total">(28)</span>
                 </label>
             </div>
 
@@ -187,18 +192,26 @@
 
         <div class="hoobFilter__row">
             <div class="hoobFilter__rowGrid">
-                <select name="minSalary" id="minSalary">
-                    <option value="upTo20k">Up to 20k</option>
-                    <option value="20kto40k">20k to 40k</option>
-                    <option value="40kto60k">40k to 60k</option>
-                    <option value="over60k">Over 60k</option>
-                </select>
-                <select name="minSalary" id="minSalary">
-                    <option value="upTo20k">Up to 20k</option>
-                    <option value="20kto40k">20k to 40k</option>
-                    <option value="40kto60k">40k to 60k</option>
-                    <option value="over60k">Over 60k</option>
-                </select>
+                <label for="cars" class="hoobSelect">
+                    <span class="hoobSelect__label">Choose a min salary:</span>
+                    <select class="hoobSelect__select" name="minSalary">
+                        <option value="" disabled selected>$ min</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </label>
+                <label for="cars" class="hoobSelect">
+                    <span class="hoobSelect__label">Choose a min salary:</span>
+                    <select class="hoobSelect__select" name="minSalary">
+                        <option value="" disabled selected>$ min</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </label>
             </div>
         </div>
 
