@@ -74,7 +74,8 @@
     "acorn": {
       "providers": [
         "App\\Providers\\ThemeServiceProvider",
-        "App\\Providers\\AssetsProvider"
+        "App\\Providers\\AssetsProvider",
+        "App\\Providers\\PostTypes\\Jobs"
       ]
     },
     "installer-paths": {

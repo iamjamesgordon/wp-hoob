@@ -1,7 +1,6 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use stdClass;
 
 final class SampleWithWPMockTest extends TestCase
 {
